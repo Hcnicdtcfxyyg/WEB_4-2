@@ -9,11 +9,14 @@
     <body>
         <p>フォームのラベル</p>
         <p>label で囲んで for 属性を指定すると、テキスト部分（「日本国内」という文字）をクリックしてもチェックボックスにチェックが入る</p>
+        <!--id="1europe" のように先頭に数字を使うと、CSSやJavaScriptで指定する際に特殊なエスケープ処理が必要になったり、一部のスクリプトで不具合の原因になったりすることがあります。
+        基本的に id 名の先頭は英字（アルファベット）から始めるのが推奨されます
+        -->
         <p>input type="checkbox" name="travel" value="日本国内" id="japan"</p>
         <p>label for="japan">日本国内</label</p>
         <input type="checkbox" name="travel" value="日本国内" id="japan">
         <label for="japan">日本国内</label>
-        <input type="checkbox" name="travel" value="ヨーロッパ" id="1europe"
+        <input type="checkbox" name="travel" value="ヨーロッパ" id="1europe">
         <label for="1europe">ヨーロッパ</label>
     </body>
 </html>
